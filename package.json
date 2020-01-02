@@ -1,0 +1,22 @@
+{
+  "name": "express-app",
+  "version": "1.0.0",
+  "description": "an application built with node.js express framework",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git remote add origin https://github.com/kennie-larkson/express-app.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "server",
+    "web-application",
+    "javascript"
+  ],
+  "author": "Lawal, Abdulrafiu kehinde (JavaScript Student)",
+  "license": "ISC"
+}
