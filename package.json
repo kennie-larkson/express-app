@@ -18,5 +18,8 @@
     "javascript"
   ],
   "author": "Lawal, Abdulrafiu kehinde (JavaScript Student)",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
