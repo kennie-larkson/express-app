@@ -8,5 +8,22 @@
 </head>
 <body>
     <p>We are live!</p>
+
+    <label for="options">Select:</label>
+    <input type="text" name="optionsList" id="optionsList" list="dataList">
+    <datalist id="dataList">
+        <option value="#Goldenrod">Goldenrod</option>
+        <option>Aquamarine</option>
+        <option>Oceanblue</option>
+    </datalist>
+
+    <p id="selectedOpt"></p>
+    
+    <script>
+        const selectedData = document.getElementsByName('optionsList')[0];
+        selectedData.addEventListener('input', ()=>{
+            document.getElementById('selectedOpt').innerHTML = 'The selected option from the datalist is :'+this.value;
+        });
+    </script>
 </body>
 </html>
