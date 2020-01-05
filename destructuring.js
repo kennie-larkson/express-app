@@ -14,6 +14,14 @@ const newArray = [...alphabets, ...numbers];//combining alphabets and numbers ar
 
  console.log(newArray);
 
+ const sumAndMultiply = ( a,b )=> [a+b, a*b];//function returns an array of two element sum and multiply
+ const array = sumAndMultiply(3,2);
+ console.log(array);
+
+ const[sum,multiply] = sumAndMultiply(3,2);//destructuring the return array into sum and multiply variables
+ console.log(sum);
+ console.log(multiply);
+
 
 
 
