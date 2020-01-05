@@ -13,6 +13,28 @@ const characters = [
     {   id: 5, name: 'kennie'}
 ]
 
+const getName = name => {
+    
+       return character => character.name === name;
+    
+}
+
+console.log( characters.find(  getName('lawal')) );
+
+
+
+
+const getId = id => {
+    
+    return character => character.id === id;
+ 
+}
+
+console.log( characters.find(  getId(3)) );
+
+
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
 const something = {
 
     lname : 'Lawal',
@@ -24,7 +46,7 @@ const something = {
  }
 
 }
-const {getName,lname} = something;
+const { getName, lname } = something;
 console.log(getName('kennie')+' '+lname);
 
 const newObj = {
@@ -35,24 +57,7 @@ const newObj = {
 };
 console.log(newObj);
 
-// const getName = name => {
-    
-//        return character => character.name === name;
-    
-// }
 
-// console.log( characters.find(  getName('lawal')) );
-
-
-
-
-// const getId = id => {
-    
-//     return character => character.id === id;
- 
-// }
-
-// console.log( characters.find(  getId(3)) );
 
 
 
