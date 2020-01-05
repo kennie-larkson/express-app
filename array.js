@@ -13,26 +13,46 @@ const characters = [
     {   id: 5, name: 'kennie'}
 ]
 
+const something = {
 
+    lname : 'Lawal',
 
-const getName = name => {
+     getName : fname => {
     
-       return character => character.name === name;
-    
+        return  fname;
+     
+ }
+
 }
+const {getName,lname} = something;
+console.log(getName('kennie')+' '+lname);
 
-console.log( characters.find(  getName('lawal')) );
+const newObj = {
+    age: 33,
 
+    // des : {getName:{fname}} = something,
+    ...something
+};
+console.log(newObj);
 
-
-
-const getId = id => {
+// const getName = name => {
     
-    return character => character.id === id;
+//        return character => character.name === name;
+    
+// }
+
+// console.log( characters.find(  getName('lawal')) );
+
+
+
+
+// const getId = id => {
+    
+//     return character => character.id === id;
  
-}
+// }
 
-console.log( characters.find(  getId(3)) );
+// console.log( characters.find(  getId(3)) );
 
 
 
